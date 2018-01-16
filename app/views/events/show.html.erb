@@ -1,0 +1,32 @@
+<div class="container container-mod">
+  <div class="panel panel-primary">
+    <div class="panel-heading"><%= @event.name %></div>
+
+    <div class="panel-body">
+
+
+      <p>Host: <%= @event.user.email %></p>
+
+      <!-- Main Info -->
+      <h4><%= @event.name %></h4>
+      <p> fg fgnrn fn rnfnf n fn fn fn fn fn fhn fchn fx</p>
+      <hr></hr>
+
+      <!-- About -->
+      <h4>Location : <%= @event.location %></h4>
+      <p><%= @event.description %></p>
+
+      <!-- Amenities -->
+      <h4>Amenities</h4>
+      <ul class="amenities">
+        <li><%= !@event.includes_food ? ("<s>Food</s>").html_safe : "food" %></li>
+        <li><%= !@event.includes_drinks ? ("<s>Drinks</s>").html_safe : "drinks" %></li>
+
+      </ul>
+
+    </div>
+
+  </div>
+
+  <%= link_to "Back", events_path, class: "btn btn-default" %>
+</div>
