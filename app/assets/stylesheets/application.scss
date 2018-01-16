@@ -16,3 +16,16 @@
 
  @import "bootstrap-sprockets";
  @import "bootstrap";
+
+ html,body{
+   height : 100%;
+ }
+ .messages {
+   position:fixed;
+ }
+
+ .navbar{
+   position: fixed;
+   width : 100%;
+   margin-top : 0px;
+ }

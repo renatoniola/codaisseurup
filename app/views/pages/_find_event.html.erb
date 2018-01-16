@@ -1,0 +1,21 @@
+<section class="find_event">
+  <div class="container">
+
+    <div class="row">
+
+      <div class="col-xs-12">
+        <h2>Latest events</h2>
+        <div class="under_text">These are the latest events</div>
+
+
+        <%= form_tag("/search", method: "get") do %>
+
+          <%= text_field_tag(:q) %>
+          <%= submit_tag "Search" , class: 'btn btn-primary' %>
+        <% end %>
+
+      </div>
+    </div>
+
+  </div>
+</section>

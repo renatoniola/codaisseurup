@@ -1,3 +1,65 @@
 // Place all the styles related to the Pages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.jumbotron{
+   background : none !important;
+   h1{
+     color : white !important;
+     font-size: 60px !important;
+   }
+   position:relative;
+   top: 50%;
+   transform: translateY(-50%);
+
+}
+.upper_section{
+  position: relative;
+  min-height : 80%;
+  height : 80%;
+   background: url('BG.jpg') no-repeat top center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  p{color : white;}
+}
+
+.events_section, .find_event ,.disclamer{
+    padding : 100px 0px 100px 0px;
+    h2{
+      font-size : 30px;
+      text-align: center;
+    p{
+      text-align: center;
+    }
+  }
+  .event{
+    h3{
+      text-align: center;
+    }
+  }
+}
+.disclamer{
+    text-align: center;
+
+
+}
+.find_event{
+  color : white;
+  h2{
+    text-align: left;
+
+  }
+  background: url('BG.jpg') no-repeat top center;
+ -webkit-background-size: cover;
+ -moz-background-size: cover;
+ -o-background-size: cover;
+ background-size: cover;
+}
+footer{
+  padding : 20px;
+  color: white;
+  text-align: center;
+  background-color: grey;
+}
