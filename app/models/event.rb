@@ -1,18 +1,25 @@
 class Event < ApplicationRecord
-
-
-
   belongs_to :user
+
+  BARGAIN_PRICE = 30
+
   has_and_belongs_to_many :categories
 
   validates :name, presence: true
-  validates :ends_at, presence: true #, if: :check_dates?
+  validates :ends_at, presence: true # , if: :check_dates?
   validates :starts_at, presence: true
+  validates :ends_at, presence: true
 
   validates :description, presence: true, length: { maximum: 500 }
 
 
-  private
+  def bargain?
+    price < BARGAIN_PRICE
+  end
+
+  def self.order_by_price
+    order :price
+  end
 
 
   # def check_dates?
@@ -26,5 +33,4 @@ class Event < ApplicationRecord
   #
   #
   # end
-
 end

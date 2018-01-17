@@ -1,5 +1,5 @@
 FactoryBot.define do
-  factory :room do
+  factory :event  do
     name                 "evento_test"
     description          { Faker::Lorem.sentence(40) }
     capacity             55
