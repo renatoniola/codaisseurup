@@ -9,6 +9,8 @@ end
 gem 'devise'
 # Use Bootstrap for styling
 gem 'bootstrap-sass', '~> 3.3.6'
+gem 'bootstrap3-datetimepicker-rails', '~> 4.14.30'
+gem 'momentjs-rails', '>= 2.9.0'
 
 # Use jQuery for easier javascript
 gem 'jquery-rails', '~> 4.3.1'
@@ -37,8 +39,13 @@ gem 'jbuilder', '~> 2.5'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
+group :test do
+  gem 'capybara', '~> 2.9', '>= 2.9.1'
+end
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
+  gem 'rspec-rails', '~> 3.5', '>= 3.5.2'
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
 end
 

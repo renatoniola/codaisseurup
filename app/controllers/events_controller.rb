@@ -8,6 +8,7 @@ class EventsController < ApplicationController
   end
 
   def show
+    @categories = @event.categories
   end
 
   def new
@@ -17,8 +18,8 @@ class EventsController < ApplicationController
   def create
     @event = current_user.events.build(event_params)
 
-    @event.starts_at = Time.now
-    @event.ends_at = 2.days.from_now
+    #@event.starts_at = Time.now
+    #@event.ends_at = 2.days.from_now
 
     if @event.save
       redirect_to @event, notice: "event created"
@@ -48,7 +49,7 @@ class EventsController < ApplicationController
     params
       .require(:event)
       .permit(
-        :name , :description , :starts_at , :ends_at , :location , :capacity , :price , :includes_food ,:includes_drinks , :active
+        :name , :description , :starts_at , :ends_at , :location , :capacity , :price , :includes_food ,:includes_drinks , :active ,category_ids: []
       )
   end
 end
