@@ -24,7 +24,7 @@ class EventsController < ApplicationController
       image_params.each do |image|
         @event.photos.create(image: image)
       end
-      redirect_to edit_event_path@event), notice: "event created"
+      redirect_to edit_event_path(@event), notice: "event created"
     else
       render :new
     end
@@ -45,7 +45,7 @@ class EventsController < ApplicationController
         @event.photos.create(image: image)
       end
 
-     redirect_to edit_room_path(@event), notice: "event updated"
+     redirect_to edit_event_path(@event), notice: "event updated"
    else
      render :edit
    end
