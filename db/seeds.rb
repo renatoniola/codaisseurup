@@ -7,9 +7,7 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 Category.destroy_all
-
 Photo.destroy_all
-
 Event.destroy_all
 Profile.destroy_all
 User.destroy_all
