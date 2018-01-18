@@ -36,7 +36,7 @@ film = Category.create(name: 'film')
 
 event_1 = Event.create!(
   name: "partyyy renato 2",
-  description: "a great party brooo",
+  description: "Art party celiac cloud bread, listicle stumptown tilde shaman beard. Meh vice selvage kitsch try-hard vaporware 3 wolf moon subway tile DIY cred. Narwhal 3 wolf moon wayfarers polaroid sustainable, lyft small batch four dollar toast single-origin coffee vaporware keytar. Taiyaki man braid leggings venmo twee. Fam affogato meditation bicycle rights ennui butcher plaid venmo paleo hell of everyday carry meggings swag.",
   location: "amsterdam",
   price: 20.0,
   capacity: 300,
@@ -50,8 +50,8 @@ event_1 = Event.create!(
 )
 event_2 = Event.create!(
   name: "partyyy2",
-  description: "a great party brooo",
-  location: "amsterdam",
+  description: "Art party celiac cloud bread, listicle stumptown tilde shaman beard. Meh vice selvage kitsch try-hard vaporware 3 wolf moon subway tile DIY cred. Narwhal 3 wolf moon wayfarers polaroid sustainable, lyft small batch four dollar toast single-origin coffee vaporware keytar. Taiyaki man braid leggings venmo twee. Fam affogato meditation bicycle rights ennui butcher plaid venmo paleo hell of everyday carry meggings swag.",
+  location: "utrecht",
   price: 20.0,
   capacity: 300,
   includes_food: true,
@@ -64,7 +64,7 @@ event_2 = Event.create!(
 )
 event_3 = Event.create!(
   name: "partyyy3",
-  description: "a great party brooo",
+  description: "Art party celiac cloud bread, listicle stumptown tilde shaman beard. Meh vice selvage kitsch try-hard vaporware 3 wolf moon subway tile DIY cred. Narwhal 3 wolf moon wayfarers polaroid sustainable, lyft small batch four dollar toast single-origin coffee vaporware keytar. Taiyaki man braid leggings venmo twee. Fam affogato meditation bicycle rights ennui butcher plaid venmo paleo hell of everyday carry meggings swag.",
   location: "amsterdam",
   price: 20.0,
   capacity: 300,
@@ -78,8 +78,8 @@ event_3 = Event.create!(
 )
 event_4 = Event.create!(
   name: "partyyy renato 1",
-  description: "a great party brooo",
-  location: "amsterdam",
+  description: "Art party celiac cloud bread, listicle stumptown tilde shaman beard. Meh vice selvage kitsch try-hard vaporware 3 wolf moon subway tile DIY cred. Narwhal 3 wolf moon wayfarers polaroid sustainable, lyft small batch four dollar toast single-origin coffee vaporware keytar. Taiyaki man braid leggings venmo twee. Fam affogato meditation bicycle rights ennui butcher plaid venmo paleo hell of everyday carry meggings swag.",
+  location: "moon",
   price: 20.0,
   capacity: 300,
   includes_food: true,
