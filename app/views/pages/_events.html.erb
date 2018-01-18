@@ -12,7 +12,6 @@
   <% @events.each do |event| %>
     <article class="event col-xs-12 col-sm-4">
       <h3><%= event.name %></h3>
-      <%= image_tag event.photo %>
       <p><%= event.description %></p>
 
       <%= link_to "See event", event_path(event), class: "btn btn-primary btn-md" %>
