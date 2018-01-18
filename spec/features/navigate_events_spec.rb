@@ -14,11 +14,11 @@ describe "Navigating events" do
     expect(current_path).to eq(events_path)
   end
 
-  it "allows navigation from the listing page to the detail page" do
-  visit events_url
+    it "allows navigation from the listing page to the detail page" do
+    visit events_url
 
-  click_link "View"
+    click_link "View"
 
-  expect(current_path).to eq(event_path(event))
-end
+    expect(current_path).to eq(event_path(event))
+  end
 end
